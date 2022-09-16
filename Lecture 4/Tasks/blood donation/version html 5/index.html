@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <!-- start header -->
+            <header>
+                <h2>نموذج التبرع بالدم</h2>
+                <p>من فضلك قم بمليء البيانات</p>
+            </header>
+            <!-- end header -->
+            <!-- start form -->
+            <form action="" method="post">
+                <!-- blood type -->
+                <section class="blood-type">
+                    <label for="blood-type">فصيلة الدم :</label>
+                    <select name="type" id="blood-type">
+                        <option selected hidden>فصيلة الدم</option>
+                        <option>0 Rh+</option>
+                        <option>A Rh+</option>
+                        <option>B Rh+</option>
+                        <option>AB Rh+</option>
+                        <option>A Rh-</option>
+                        <option>B Rh-</option>
+                        <option>AB Rh-</option>
+                    </select>
+                </section>
+
+                <!-- user name -->
+                <section class="user-name">
+                    <label for="name">اسمك</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="اسمك بالكامل"
+                        required
+                    />
+                </section>
+
+                <!-- birth date -->
+                <section class="birth-date">
+                    <label for="birth-date">تاريخ الميلاد:</label>
+                    <input type="date" name="birth" required />
+                </section>
+                <!-- weight -->
+                <section class="weight">
+                    <label for="weight">وزنك:</label>
+                    <input
+                        type="number"
+                        id="weight"
+                        placeholder="وزنك"
+                        min="50"
+                        max="120"
+                        name="weight"
+                        required
+                    />
+                </section>
+                <!-- note -->
+                <section class="note">
+                    <label for="note">ملاحظات:</label>
+                    <textarea id="note" value="note" required></textarea>
+                </section>
+                <input type="submit" value="إرسال" />
+            </form>
+            <!-- end form -->
+            <!-- start donation benefits -->
+            <section class="donation-benefits">
+                <h2>فوائد التبرع بالدم</h2>
+                <video width="400" controls>
+                    <source
+                        src="./media/video/صباح العربية تعرف على فوائد التبرع بالدم.mp4"
+                    />
+                    متصفحك لا يدعم تشغيل الفيديو
+                </video>
+            </section>
+            <!-- end donation condition -->
+            <section class="donation-condition">
+                <h2>شروط التبرع بالدم</h2>
+                <audio controls>
+                    <source
+                        src="./media/audio//تعرف على شروط التبرع بالدم حتى لا تؤذي نفسك.mp3"
+                    />
+                    متصفحك لا يدعم تشغيل الصوتيات
+                </audio>
+            </section>
+            <!-- end donation condition -->
+        </main>
+    </body>
+</html>
